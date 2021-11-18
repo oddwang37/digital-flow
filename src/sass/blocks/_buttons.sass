@@ -1,0 +1,31 @@
+.button
+    width: 280px
+    height: 60px
+    background-color: rgba(0, 0, 0, 0)
+    border: 1px solid #000
+    font-family: inherit
+    font-weight: 500
+    cursor: pointer
+    padding: 20px 85px 20px 30px
+    position: relative
+    &::after
+        content: ''
+        width: 7px
+        height: 12px
+        display: block
+        background: url('../icons/buttons/arrow-right.svg') center center/cover no-repeat
+        position: absolute
+        right: 32px
+        top: 24px
+    &_special
+        margin-top: 60px
+        font-size: 16px
+    &_request
+        @include gradient-bg
+        color: #fff
+        border: none
+        margin-top: 65px
+        font-size: 16px
+        &::after
+            background: url('../icons/buttons/white-arrow.svg') center center/cover no-repeat
+

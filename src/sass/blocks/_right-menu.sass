@@ -1,0 +1,54 @@
+.right-menu
+    width: 40vw
+    height: 100vh
+    position: fixed
+    right: -100%
+    top: 0
+    background-color: #191a1e
+    padding: 50px 0 160px 80px
+    transition: .9s
+    &__close
+        width: 20px
+        cursor: pointer
+        svg
+            transition: .5s
+        svg:hover #close
+            fill-opacity: 1
+    &__list
+        margin-top: 90px
+        list-style-type: none
+    &__item
+        color: rgba(255, 255, 255, 0.3)
+        font-size: 18px
+        font-weight: 500
+        margin-bottom: 40px
+        position: relative
+        transition: 0.3s
+        &::after
+            content: ''
+            width: 175px
+            height: 0.5px
+            background-color: #fff
+            position: absolute
+            bottom: -10px
+            left: 0
+            display: none
+        &:hover
+            color: #fff
+            &::after
+                display: block
+        
+
+.right-menu__social
+    margin-top: 80px
+    width: 190px
+    display: flex
+    justify-content: space-between
+    align-items: center
+.menu-social__item
+    width: 30px
+    height: 30px
+    border-radius: 5px
+    background-color: #fff
+.right-menu.active 
+    right: 0
